@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi Project MVP</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #0078d7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background: #005a9e;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact-form input, .contact-form textarea, .contact-form button {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Raspberry Pi Ad Display MVP</h1>
+        <p>Innovative solutions powered by Raspberry Pi</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Project</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <h2>Welcome to Our MVP</h2>
+        <p>Explore how we use Raspberry Pi to revolutionize pincode-based advertising.</p>
+    </section>
+    <section id="about">
+        <h2>About the Project</h2>
+        <p>This project integrates Raspberry Pi to display advertisements on the back of autos based on the user's pincode. It also includes a shock sensor for enhanced functionality.</p>
+    </section>
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <p>The Raspberry Pi 4B serves as the core operating system in our prototype, managing commands from the server to play ads on a display screen while providing real-time detection. Using a GSM module, it automatically captures GPS data, including the pin code of the auto-rickshaw's location. This data is sent to the server, which determines the relevant advertisements to display based on the location.</p>
+        <p>The system retrieves video files from a memory card, categorized into folders corresponding to specific pin codes. For example, if the auto-rickshaw enters pin code 500045, the Raspberry Pi accesses the "500045" folder and plays only the advertisements stored there.</p>
+        <p>The display screen, approximately 100 meters in size, is designed for high brightness, ensuring that the advertisements are visually appealing and have high resolution. This makes the ads attractive to drivers, passengers, and passersby. The ads can include QR codes or promotional details, such as discounts available at nearby stores. This allows viewers to scan the QR codes for more information or to redeem offers.</p>
+        <p>This MVP integrates the Raspberry Pi 4B with a mobile app or website to manage data and deliver ads seamlessly. The system's adaptability ensures that location-specific content is displayed, making it an engaging and impactful advertising medium.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Raspberry Pi Ad Display Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
